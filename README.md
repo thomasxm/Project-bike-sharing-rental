@@ -3,11 +3,23 @@ In this project, a neural network is built to carry out prediction problem on a 
 
 ## Introduction
 In this project, you'll get to build a neural network from scratch to carry out a prediction problem on a real dataset! By building a neural network from the ground up, you'll have a much better understanding of gradient descent, backpropagation, and other concepts that are important to know before we move to higher level tools such as PyTorch. You'll also get to see how to apply these networks to solve real prediction problems!
+The data comes from the UCI Machine Learning Database [here](https://archive.ics.uci.edu/ml/datasets/Bike+Sharing+Dataset).
+
+## Topics
+In this project, we cover several areas:
+* Machine learning
+* Deep learning
+* Feedforward neural networks
+* backward propagation
+* Activation functions
+* Hyper-parameters tuning
+* Pytorch
 
 
-=========================================
+
+
 ## Background 
-=========================================
+
 
 Bike sharing systems are new generation of traditional bike rentals where whole process from membership, rental and return 
 back has become automatic. Through these systems, user is able to easily rent a bike from a particular position and return 
@@ -21,18 +33,18 @@ of travel, departure and arrival position is explicitly recorded in these system
 a virtual sensor network that can be used for sensing mobility in the city. Hence, it is expected that most of important
 events in the city could be detected via monitoring these data.
 
-=========================================
+
 ## Data Set
-=========================================
+
 Bike-sharing rental process is highly correlated to the environmental and seasonal settings. For instance, weather conditions,
 precipitation, day of week, season, hour of the day, etc. can affect the rental behaviors. The core data set is related to  
 the two-year historical log corresponding to years 2011 and 2012 from Capital Bikeshare system, Washington D.C., USA which is 
 publicly available in http://capitalbikeshare.com/system-data. We aggregated the data on two hourly and daily basis and then 
 extracted and added the corresponding weather and seasonal information. Weather information are extracted from http://www.freemeteo.com. 
 
-=========================================
+
 ## Associated tasks
-=========================================
+
 
 	- Regression: 
 		Predication of bike rental count hourly or daily based on the environmental and seasonal settings.
@@ -43,18 +55,18 @@ extracted and added the corresponding weather and seasonal information. Weather 
 		identified in [1]. Therefore the data can be used for validation of anomaly or event detection algorithms as well.
 
 
-=========================================
+
 ## Files
-=========================================
+
 
 	- Readme.txt
 	- hour.csv : bike sharing counts aggregated on hourly basis. Records: 17379 hours
 	- day.csv - bike sharing counts aggregated on daily basis. Records: 731 days
 
 	
-=========================================
+
 ## Dataset characteristics
-=========================================	
+	
 Both hour.csv and day.csv have the following fields, except hr which is not available in day.csv
 	
 	- instant: record index
@@ -79,9 +91,9 @@ Both hour.csv and day.csv have the following fields, except hr which is not avai
 	- registered: count of registered users
 	- cnt: count of total rental bikes including both casual and registered
 	
-=========================================
+
 ## License
-=========================================
+
 Use of this dataset in publications must be cited to the following publication:
 
 [1] Fanaee-T, Hadi, and Gama, Joao, "Event labeling combining ensemble detectors and background knowledge", Progress in Artificial Intelligence (2013): pp. 1-15, Springer Berlin Heidelberg, doi:10.1007/s13748-013-0040-3.
@@ -155,8 +167,8 @@ If you'd like to learn more about version control and using `git` from the comma
 
 1. Clone the repository, and navigate to the downloaded folder. This may take a minute or two to clone due to the included image data.
 ```
-git clone https://github.com/udacity/deep-learning-v2-pytorch.git
-cd deep-learning-v2-pytorch
+git clone https://github.com/thomasxmeng/Project-bike-sharing-rental.git
+cd Project-bike-sharing-rental
 ```
 
 2. Create (and activate) a new environment, named `deep-learning` with Python 3.6. If prompted to proceed with the install `(Proceed [y]/n)` type y.
@@ -172,7 +184,7 @@ cd deep-learning-v2-pytorch
 	activate deep-learning
 	```
 	
-	At this point your command line should look something like: `(deep-learning) <User>:deep-learning-v2-pytorch <user>$`. The `(deep-learning)` indicates that your environment has been activated, and you can proceed with further package installations.
+	At this point your command line should look something like: `(deep-learning) <User>:Project-bike-sharing-rental <user>$`. The `(deep-learning)` indicates that your environment has been activated, and you can proceed with further package installations.
 
 3. Install PyTorch and torchvision; this should install the latest version of PyTorch.
 	
@@ -199,10 +211,12 @@ Noe, assuming your `deep-learning` environment is still activated, you can navig
 
 ```
 cd
-cd deep-learning-v2-pytorch
+cd Project-bike-sharing-rental
 jupyter notebook
 ```
+8. In your browser, open `Predicting_bike_sharing_data.ipynb`. Note that in the previous workspace this was called `Your_first_neural_network.ipynb` but the contents are the same, this is just a descriptive difference.
+Follow the instructions in the notebook; they will lead you through the project. 
 
-To exit the environment when you have completed your work session, simply close the terminal window.
+9. To exit the environment when you have completed your work session, simply close the terminal window.
 
-For further information about this dataset please contact Hadi Fanaee-T (hadi.fanaee@fe.up.pt)
+
